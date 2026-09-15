@@ -14,6 +14,4 @@ This compose snippet can be used to deploy the container. You need to add a targ
       - M3U_URL=https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/ca.m3u
       - NTFY_URL=https://ntfy.sh/mytopic
       - TZ=Canada/Atlantic
-    volumes:
-      - /path/to/stream-ntfy/tmp:/tmp
 ```
