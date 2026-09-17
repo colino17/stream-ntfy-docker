@@ -1,9 +1,9 @@
 FROM alpine:latest
 
 # ENVIRONMENT
-ENV M3U_URL https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/ca.m3u
-ENV NTFY_URL https://ntfy.sh/mytopic
-ENV TZ Canada/Atlantic
+ENV M3U_URL=""
+ENV NTFY_URL=""
+ENV TZ="Canada/Atlantic"
 
 # BASICS
 RUN apk update
