@@ -29,7 +29,7 @@ while IFS= read -r line; do
             sleep 5
         else
             echo "🔴 $line"
-            curl -s -o /dev/null -H 'Title: STREAM DOWN' -d "🔴 $line"  $NTFY_URL
+            curl -s -o /dev/null -H 'Title: STREAM DOWN' -d "🔴 $line"  "$NTFY_URL"
         fi
     fi
 done < "$M3U_FILE"
