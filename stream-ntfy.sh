@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DOWNLOAD M3U FILE
-wget -O /tmp/streams.m3u "$M3U_URL"
+wget --no-hsts -O /tmp/streams.m3u "$M3U_URL"
 
 # SET M3U VARIABLE
 M3U_FILE="/tmp/streams.m3u"
