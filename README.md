@@ -3,7 +3,7 @@ A simply docker container to run a cron job that pulls down an M3U and checks to
 
 ## Example Docker Compose
 
-This compose snippet can be used to deploy the container. You need to add a target M3U to check using the M3U_URL environment variable and also a NTFY_URL environment variable to receive notifications.
+This compose snippet can be used to deploy the container. You need to add a target M3U to check using the M3U_URL environment variable and also a NTFY_URL environment variable to receive notifications. Make sure to only used URLs that you trust.
 
 ```yaml
   stream-ntfy:
@@ -11,7 +11,7 @@ This compose snippet can be used to deploy the container. You need to add a targ
     container_name: stream-ntfy
     restart: always
     environment:
-      - M3U_URL=https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/ca.m3u
-      - NTFY_URL=https://ntfy.sh/mytopic
+      - M3U_URL=https://path-to-my-playlist.org/my-playlist.m3u
+      - NTFY_URL=https://my-ntfy-server.org/my-topic
       - TZ=Canada/Atlantic
 ```
